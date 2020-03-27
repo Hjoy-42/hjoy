@@ -1,0 +1,27 @@
+First day
+关于github DNS污染导致总是连接超时的问题
+
+windows键+R 输入cmd 
+然后在黑窗口输入 ping www.baidu.com  验证网络是否连接成功
+如果显示成功
+则下一步输入ping github.com
+则会显示连接超时
+
+接下来是解决步骤
+1.找到文件C:\Windows\System32\drivers\etc 打开之后在找到文件hosts
+右键点击 打开方式   只需要系统自带记事本即可
+然后去通过网址https://github.com.ipaddress.com/  
+在里面找到github.global.ssl.fastly.net和github.com
+点开，分别找到找到相应的IP Addreess
+
+然后在打开的hosts记事本补充如下
+
+对应的ip地址 github.global.ssl.fastly.net
+对应的ip地址 github.com git
+
+然后保存即可
+
+最后需要清除一下本地的DNS缓存：cmd中输入ipconfig/flushdns
+
+然后ping github.com  就可以成功了
+
