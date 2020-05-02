@@ -10,7 +10,7 @@ windows键+R 输入cmd
 接下来是解决步骤
 1.找到文件C:\Windows\System32\drivers\etc 打开之后在找到文件hosts
 右键点击 打开方式   只需要系统自带记事本即可
-然后去通过网址https://github.com.ipaddress.com/  
+然后去通过网址https://www.ipaddress.com/  
 在里面找到github.global.ssl.fastly.net和github.com
 点开，分别找到找到相应的IP Addreess
 
